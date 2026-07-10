@@ -76,10 +76,7 @@ body{
   text-align:center;
   padding:150px 20px 60px;
 
-  background:
-  linear-gradient(rgba(0,30,70,.4), rgba(0,20,50,.7)),
-  url("../images/Background.jpg");
-
+  background: url("../images/background.jpg");
   background-size:cover;
   background-position:center;
 }
