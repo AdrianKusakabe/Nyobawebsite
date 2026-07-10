@@ -35,8 +35,9 @@ body{
 }
 
 .logo-area img{
-  width:65px;
-  height:65px;
+  height: 80px;
+  width: auto;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.4));
 }
 
 .logo-area h2{
@@ -174,7 +175,7 @@ footer{
 
   .logo-area img{
     width:45px;
-    height:45px;
+    height: 50px;
   }
 
   .logo-area h2{
