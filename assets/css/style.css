@@ -69,7 +69,7 @@ body{
 }
 
 
-/* ================= HERO ================= */
+/* ================= HERO (BACKGROUND FIXED) ================= */
 
 .hero{
   min-height:100vh;
@@ -80,8 +80,9 @@ body{
   align-items:flex-start;
   text-align:center;
 
+  /* background yang kamu bilang sudah bagus */
   background:
-  linear-gradient(rgba(0,40,90,.35), rgba(0,20,60,.6)),
+  linear-gradient(rgba(0,40,90,.25), rgba(0,20,60,.5)),
   url("../images/background.jpg");
 
   background-size:cover;
@@ -174,6 +175,20 @@ body{
 }
 
 
+/* ================= DESKTOP FIX (3 ATAS 2 BAWAH) ================= */
+
+@media (min-width: 1024px){
+  .card-container{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items:center;
+  }
+
+  .card{
+    max-width:300px;
+  }
+}
+
+
 /* ================= FOOTER ================= */
 
 footer{
@@ -184,7 +199,7 @@ footer{
 }
 
 
-/* ================= RESPONSIVE ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px){
 
