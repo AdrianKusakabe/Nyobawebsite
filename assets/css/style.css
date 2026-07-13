@@ -82,17 +82,19 @@ body{
 /* ================= TEXT ================= */
 
 .hero h1{
-  font-size:50px;
+  font-size:52px;
   font-weight:800;
-  text-align:center;
-  letter-spacing:1px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:20px;
 }
 
 .desc{
-  font-size:16px;
+  font-size:17px;
   line-height:1.7;
   max-width:700px;
   margin-bottom:50px;
+  opacity:.95;
 }
 
 
