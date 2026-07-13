@@ -83,7 +83,7 @@ body{
   /* background yang kamu bilang sudah bagus */
   background:
   linear-gradient(rgba(0,40,90,.25), rgba(0,20,60,.5)),
-  url("../images/background.jpg");
+  url("../images/Background.png");
 
   background-size:cover;
   background-position:center;
