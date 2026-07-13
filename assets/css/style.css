@@ -9,6 +9,7 @@
 
 body{
   color:white;
+  background:#0a1f44;
 }
 
 
@@ -19,7 +20,7 @@ body{
   top:0;
   left:0;
   width:100%;
-  padding:18px 40px;
+  padding:18px 50px;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -35,9 +36,10 @@ body{
 }
 
 .logo-area img{
-  height: 80px;
-  width: auto;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,.4));
+  height:75px;
+  width:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 2px 6px rgba(0,0,0,.4));
 }
 
 .logo-area h2{
@@ -70,21 +72,33 @@ body{
 /* ================= HERO ================= */
 
 .hero{
+  min-height:100vh;
+  padding:180px 20px 100px;
+
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  text-align:center;
+
   background:
-  linear-gradient(rgba(0,40,90,.4), rgba(0,20,60,.6)),
-  url("../images/nyobaa.jpg");
+  linear-gradient(rgba(0,40,90,.35), rgba(0,20,60,.6)),
+  url("../images/background.jpg");
 
   background-size:cover;
   background-position:center;
 }
 
 .content{
-  max-width:1100px;
+  max-width:1200px;
   width:100%;
+  margin:0 auto;
   display:flex;
   flex-direction:column;
   align-items:center;
 }
+
+
+/* ================= TEXT ================= */
 
 .hero h1{
   font-size:52px;
@@ -99,25 +113,25 @@ body{
   line-height:1.7;
   max-width:700px;
   margin-bottom:50px;
+  opacity:.95;
 }
 
 
-/* ================= CARD ================= */
+/* ================= CARD GRID ================= */
 
 .card-container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:25px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:30px;
+  width:100%;
+  margin-top:40px;
 }
 
 .card{
-  width:250px;
-  height:250px;
-  background:rgba(0,60,130,.65);
-  border:1px solid rgba(255,255,255,.3);
+  background:rgba(0,60,130,.55);
+  border:1px solid rgba(255,255,255,.2);
   border-radius:20px;
-  padding:20px;
+  padding:30px;
   text-decoration:none;
   color:white;
 
@@ -126,32 +140,37 @@ body{
   justify-content:center;
   align-items:center;
 
-  transition:.3s;
+  transition:.35s ease;
+  backdrop-filter:blur(8px);
 }
 
 .card:hover{
-  transform:translateY(-8px);
-  background:#007bff;
+  transform:translateY(-10px) scale(1.02);
+  background:rgba(0,90,200,.8);
+  box-shadow:0 15px 40px rgba(0,0,0,.4);
 }
 
 .icon{
-  font-size:40px;
-  margin-bottom:12px;
+  font-size:42px;
+  margin-bottom:15px;
 }
 
 .card h3{
-  font-size:17px;
+  font-size:18px;
+  font-weight:700;
   margin-bottom:10px;
 }
 
 .card p{
-  font-size:13px;
-  margin-bottom:12px;
+  font-size:14px;
+  margin-bottom:15px;
+  opacity:.9;
 }
 
 .card span{
   font-size:13px;
   font-weight:600;
+  opacity:.95;
 }
 
 
@@ -159,7 +178,7 @@ body{
 
 footer{
   background:#021126;
-  padding:20px;
+  padding:25px;
   text-align:center;
   font-size:13px;
 }
@@ -174,8 +193,7 @@ footer{
   }
 
   .logo-area img{
-    width:45px;
-    height: 50px;
+    height:50px;
   }
 
   .logo-area h2{
@@ -192,11 +210,12 @@ footer{
   }
 
   .hero{
-    padding:120px 15px 50px;
+    padding:130px 15px 80px;
+    background-position:top;
   }
 
   .hero h1{
-    font-size:30px; /* FIX UTAMA */
+    font-size:30px;
   }
 
   .desc{
@@ -204,12 +223,7 @@ footer{
   }
 
   .card{
-    width:100%;
-    max-width:300px;
-    height:auto;
+    padding:25px;
   }
 
-    .hero{
-    background-position: top;
-  }
 }
